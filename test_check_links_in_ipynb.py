@@ -38,7 +38,7 @@ patterns = [
         }
     },
     {
-        'text': '[![CppCon 2015: Greg Law " Give me 15 minutes & I\'ll change your view of GDB"](https://i.ytimg.com/vi/PorfLSr3DDI/hqdefault.jpg)](https://www.youtube.com/watch?v=PorfLSr3DDI)\n\n',
+        'text': '[![CppCon moving pictures](https://i.ytimg.com/vi/PorfLSr3DDI/hqdefault.jpg)](https://www.youtube.com/user/CppCon/videos)\n\n',
         'urls': {
             'https://i.ytimg.com/vi/PorfLSr3DDI/hqdefault.jpg',
         } 
@@ -120,7 +120,7 @@ def test_get_re_markdown_simple_link():
 # not including urls of images
 patterns_image = [
     {
-        'text': '[![CppCon 2015: Greg Law " Give me 15 minutes & I\'ll change your view of GDB"](https://i.ytimg.com/vi/PorfLSr3DDI/hqdefault.jpg)](https://www.youtube.com/watch?v=PorfLSr3DDI)\n\n',
+        'text': '[![CppCon moving pictures](https://i.ytimg.com/vi/PorfLSr3DDI/hqdefault.jpg)](https://www.youtube.com/user/CppCon/videos)\n\n',
         'urls': {
             'https://www.youtube.com/watch?v=PorfLSr3DDI',
         } 
