@@ -41,10 +41,7 @@ def check_link_in_cell(cell, r):
     # url match loop
     for m in r.finditer(cell['source']):
         # try to open url part of the match
-        req = requests.get(up.unquote(m.group(1)))
-        if 200 == req.status_code:
-            result = True
-        else:
+        req = requests.get(up.unquote(m.group(1)), timeout=1)
             raise requests.RequestException(f'unable to get {up.unquote(m.group(1))}')
 
 
