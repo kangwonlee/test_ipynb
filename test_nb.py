@@ -177,6 +177,8 @@ def make_file_list(path='', ext='ipynb'):
                     assert os.path.exists(file_path), f"File Not Found {file_path}"
                     file_list.append(file_path)
 
+    assert file_list
+
     return file_list
 
 
